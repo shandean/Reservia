@@ -1,19 +1,24 @@
-*{
-    padding: 0px 6px 0px;
-}
 html{
   box-sizing: border-box;
 }
+.Header-Bar{
+  padding:0px 20px 0px 30px;
+}
+main{
+  padding:0px 20px 0px 30px;
+}
+
 body{
   margin:0 auto;
   max-width: 1200px;
-  border: 1px solid green;*/
+  border: 1px solid rgb(42, 206, 42);
 }
  #logo-link{
-    padding-left: 0%;
-  
+    padding-left: -10px;
  }
+ 
 .nav a{  
+  display: flex;
     color: black;
     text-decoration: none;
     font-weight: 600; 
@@ -22,8 +27,8 @@ body{
     padding: 0 25px;
 }
 .nav {
-    display: block;
-    margin-top: 10px;
+    display: flex;
+    margin-top: 15px;
     float: right;
     height: 100%;
 }
@@ -31,13 +36,12 @@ body{
     color: rgb(0,101,252)
 }
 h4{
-    display: block;
+    display: flex;
     font-family: 'Raleway', sans-serif;
     text-align: unset;
     margin-top: 10 0 2 0;
 }
  p{
-    display: block;
     font-family: 'Raleway', sans-serif; 
     font-size: 12px;
     margin-top: -15px;
@@ -78,19 +82,21 @@ h4{
     display: inline-block;    
  }
  .button{
+   text-align: center;
+   padding: 0px;
     margin-top:20px;
     margin-bottom: 20px;
     margin-left: 15px;
-    border-radius:50px;
+    border-radius:20px;
     border: 2px solid black;
     border-color:#f2f2f2;
     background-color: white;
     font-family: 'Raleway', sans-serif;
     font-weight:600;
- 
+    font-size:smaller;
  }
- .button:hover {
-   background-color:aquamarine;
+ .button:hover,.note:hover {
+   background-color:#66FF66;
  }
  .button span:nth-child(2){
    padding-left:5px ;
@@ -99,56 +105,57 @@ h4{
  .btn{
     display: inline-block;
     background-color:#deebff;
-    width: 24px;
-    height: -30px;
+    width: 20px;
+    height: 15px;
     padding: 10px;
-    border-radius: 50%;
-    margin-left: -11px;
-    margin-top: -2px;
- 
+    border-radius: 20px;
+    margin-left: -5px;
  }
  .icon{
-  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
   color: rgb(0,101,252);
  }
 .note{ 
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  text-align:center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
   border: 0.1px solid #f2f2f2;
   background-color: white;
   color: rgb(0,101,252);
-  font-weight: 400;
-  font: center;
+  font-size: x-small;
   padding: 0px;
   margin: 0;
 }
 .inform{
-   display: inline-flex;
+  display: inline-flex;
   }
 
 .accom{
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:wrap;
     justify-content: space-evenly;
     align-content:flex-start;
     background-color: #f2f2f2;
     border-radius:15px;
     padding:0px;
     width: 65%;
-    height: 500px;
+    height: 510px;
  }
  .accom-card{
     display:flex ;
+    align-content:space-around;
     margin: 10px 0;
-    padding: 1.0px;
+    padding: 1px 6px 0px 5px;
     background-color: white;
     border-radius:13px;
-    width: 26%;
-    height: 170px;
+    width: 200px;
+    height: 176px;
  }
  .accom-card img{
-  object-fit: fill;
+   display: flex;
+  object-fit: cover;
   width: 101%;
   height: 100px;
   border-radius: 12px;
@@ -177,28 +184,30 @@ h4{
 .accom-card h3{
   height: 11%;
   margin-top:5px;
+  margin-left: 5px;
 }
 .accom-card p{
   font-size: 11px;
   height: 3%;
   margin-top:-10px;
+  margin-left: 5px;
 }
 div i{
   color: rgb(0,101,252);
   padding: 0px;
-  margin-top:-15px;
   font-size:smaller;
+  margin-left: 5px;
+  width: 5px;
 }
  .show-btn {
-  display: flex;
+  display: inline-flex;
   margin-top: 30px;
-  margin-left: -460px;
+  margin-left: -490px;
   font-family:'Raleway', sans-serif;
-  border: unset;
+  border:unset;
   background-color: #f2f2f2;
   font-weight:bolder;
 }
-
  .popular{
   display: flex;
   justify-content:space-around;
@@ -207,13 +216,13 @@ div i{
   border-radius:15px;
   padding: 0px;
   width: 30%;
-  height: 500px;
+  height: 510px;
   background-color: #f2f2f2;
  }
  .popular-card{
   display: flex;
   background-color: white;
-  padding:3.0px;
+  padding:4.0px;
   width: 80%;
   height: 100px;
   margin: 5px 30px ;
@@ -227,13 +236,13 @@ div i{
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px ;
   padding: 0px;
-  margin-left:-5px;
+  margin-left:0.1px;
  }
  .popular h2{
   font-family: 'Raleway', sans-serif;
   font-size:large;
   font-weight: 700px;
-  display: inline-block;
+  display: inline-table;
   margin-left:30px;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -251,6 +260,7 @@ div i{
   display: flex;
   flex-flow: column wrap;
   margin: 0px;
+  padding: 0px;
 }
 .popular-card h3{
  padding-left: 20px;
@@ -261,55 +271,55 @@ div i{
   margin-bottom: 20px;
 }
 .popular-card p{
-  display: flex;
   font-size: 11px;
   margin-top: 5px;
   margin-bottom: 20px;
   padding-left: 20px;
 }
 .popular-card div{
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .section-rap {
   display: flex;
   margin: 0px;
+  padding: 0px;
 
 }
 .grey-star{
   color: #f2f2f2;
   }
-/*@media screen and (max-width:480px){
+/*@media screen and (min-width:480px){
   .section-rap{
     flex-direction: column-reverse;
   }*/
 .act h2{
   font-family: 'Raleway', sans-serif;
-  font-size: large;
+  font-size: larger;
   padding: 0px;
-  border: 1px solid royalblue;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 .act{
-  border:3px rgb(247, 0, 255) solid ;
+  margin-top: 20px;
 }
 .card-wrap{
   display: flex;
+  justify-content: space-between;
   flex-flow: column;
-  border: #8b0000 2px dashed;
+  padding-top: 10px;
 }
 .card-wrap2 {
   display: flex;
   flex-flow: column;
-  border: goldenrod 3px dashed;
 }
 .wrapper {
   overflow: hidden;
-  border: chartreuse 5px solid;
   display: flex;
   flex-wrap:wrap;
   justify-content:space-between;
-  padding: 10px 5px ;
-  margin: 5px 0;
+  padding: 10px 5px 10px ;
+  margin: 20px 0;
 }
 
 .card1 img{
@@ -322,15 +332,14 @@ div i{
   padding: 0px;
 }
 .card2 img{
-  display: flex;
   object-fit: cover;
   border-radius:20px 20px 0px 0px;
   width:230px;
-  height: 190px;
+  height: 170px;
   margin-top: -15px;
+  
 }
 .card3 img{
-  display: flex;
   object-fit: cover;
   border-radius:20px 20px 0px 0px;
   width:230px;
@@ -364,12 +373,40 @@ div i{
   border-top-left-radius:0px;
   border-top-right-radius: 0px;
   width:231px;
-  font-size: 12px;
-  font-weight: bolder;
+  font-size: 13px;
+  font-weight:bolder;
   color:black;
   padding: 10px;
-  margin:-4px 5px;
+  padding-bottom: 10px;
+  margin:-4px 0px;
 }
-.footer-container{
+
+.footer-container {
   background-color: #f2f2f2;
+  padding-bottom: 50px;
+}
+.footer{
+  font-family: 'Raleway', sans-serif;
+  background-color: #f2f2f2;
+  width: 70%;
+  height:150px;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin: 5;
+}
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-left:20px;
+  margin-top: 20px;
+}
+.footer-heading h3{
+  font-size: medium;
+}
+.footer-heading a{
+  margin-bottom: 10px;
+}
+.footer-3{
+  margin-right: 60px;
 }
