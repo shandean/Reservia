@@ -1,0 +1,166 @@
+* {
+  text-decoration: none;
+	box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; 
+	outline: dotted 1px red;
+	outline-offset: -1px; */
+}
+body {
+	margin: auto;
+	padding: 0;
+}
+.Header-Bar{
+  margin: 0px 15px 0px 15px;
+
+}
+/* Reservia logo and Navigation Bar*/
+
+#logo-link{
+  display: flex;
+	align-items: center;
+	float: left;
+	width: 100%;
+  margin-top: 30px;
+}
+.navigation {
+	display: flex;
+	float: right;
+	font-size: 12px;
+	gap: 35px;
+	justify-content: flex-end;
+	width: 100%;
+  margin-top: 20px;
+}
+.navigation a{
+  color: black;
+  font-weight: 800;
+	line-height: 20px;
+  padding: 30px ;
+}
+#style{
+  color: rgb(0,101,252)
+}
+.navigation a:hover{
+  border-top: 4px solid rgb(0,101,252)
+}
+.top-Header-Bar{ 
+  display: flex;
+  margin: 0px;
+  padding: 15px;
+	justify-content: space-around;
+}
+
+/*Subtitle*/
+
+h2 {
+  font-size: 15px;
+	font-weight: 800;
+}
+p{
+  font-size: 13px;
+}
+
+/*search-bar*/
+
+.search-icon {
+  background-color: #f2f2f2;
+  padding: 14px;
+  padding-bottom: 13px;
+  border-radius: 13px 0px 0px 13px;
+  font-size: 12px;
+}
+.search-bar {
+  padding: 10px;
+  border: 0.1px solid #f2f2f2;
+  margin-left: -5px;
+}
+
+.search-bar::placeholder {
+  color: black;
+  font-weight:603;
+}
+
+.submit-btn {
+  background-color: rgb(0,101,252);
+  color: white;
+  border-radius: 0 13px 13px 0;
+  padding: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  border: unset;
+  margin-left: -5px;
+}
+
+/*Filter-section*/
+
+.filter-row {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 24px;
+  margin: 15px 0px 15px 0px;
+	height:330%;
+	width: auto;
+}
+.filter-bar h2{
+  font-weight:900;
+  font-size:14px;
+}
+.filter-button{
+  display: inline-flex;
+  align-items: center;
+  padding: 0px;
+   border-radius:20px;
+   border: 2px solid black;
+   border-color:#f2f2f2;
+   background-color: white;
+}
+
+.filter-button span:nth-child(2){
+  padding-left:5px ;
+  padding-right:10px ;
+}
+.filter-icon{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   float: left;
+   background-color:#deebff;
+   color:#0065FC ;
+   width: 10px;
+   height: 10px;
+   padding: 20px;
+   border-radius: 20px;
+   margin-left: -5px;
+}
+.filter-text{
+  font-weight:600;
+  font-size:13px;
+  color: black;
+ 
+}
+.filter-button:hover,.note:hover {
+  background-color:#66FF66;
+}
+
+/*info-section*/
+
+.icon{
+  text-align: center;
+  margin-right: 10px;
+  color: rgb(0,101,252);
+ }
+.note{ 
+  text-align:center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 0.1px solid #f2f2f2;
+  background-color: white;
+  color: rgb(0,101,252);
+  font-size: 12px;
+ 
+}
+.inform{
+  display: inline-flex;
+  }
