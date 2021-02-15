@@ -1,40 +1,48 @@
-* {
+* { 
+ 
   text-decoration: none;
 	box-sizing: border-box;
   font-family: 'Raleway', sans-serif; 
-	outline: dotted 1px red;
+	/*outline: dotted 1px red;
 	outline-offset: -1px; */
 }
 body {
-	margin: auto;
+	margin: 0 auto;
 	padding: 0;
+	max-width:1200px;
+	border: 5px solid rgb(42, 206, 42);
 }
 .Header-Bar{
   margin: 0px 15px 0px 15px;
 
 }
+.middle-of-page-section,
+.activities-background,
+.footer-section {
+	margin-top: 1rem;
+}
 /* Reservia logo and Navigation Bar*/
 
 #logo-link{
-  display: flex;
-	align-items: center;
-	float: left;
-	width: 100%;
-  margin-top: 30px;
+ display: flex;
+ align-items: center;
+ float: left;
+ width: 100%;
+ margin-top: 30px;
 }
 .navigation {
-	display: flex;
-	float: right;
-	font-size: 12px;
-	gap: 35px;
-	justify-content: flex-end;
-	width: 100%;
-  margin-top: 20px;
+ display: flex;
+ float: right;
+ font-size: 12px;
+ gap: 35px;
+ justify-content: flex-end;
+ width: 100%;
+ margin-top: 20px;
 }
 .navigation a{
   color: black;
   font-weight: 800;
-	line-height: 20px;
+  line-height: 20px;
   padding: 30px ;
 }
 #style{
@@ -47,14 +55,14 @@ body {
   display: flex;
   margin: 0px;
   padding: 15px;
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 /*Subtitle*/
 
 h2 {
   font-size: 15px;
-	font-weight: 800;
+  font-weight: 800;
 }
 p{
   font-size: 13px;
@@ -109,7 +117,6 @@ p{
 .filter-button{
   display: inline-flex;
   align-items: center;
-  padding: 0px;
    border-radius:20px;
    border: 2px solid black;
    border-color:#f2f2f2;
@@ -155,12 +162,268 @@ p{
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  border: 0.1px solid #f2f2f2;
+  border: 0.2em solid #f2f2f2;
   background-color: white;
   color: rgb(0,101,252);
-  font-size: 12px;
+  font-size: 0.8em;
  
 }
 .inform{
   display: inline-flex;
   }
+  
+/* Accommodations in Marseille */
+
+.accommodations-card {
+	background-color: white;
+	border: solid white 0.3110rem;
+	border-radius: 0.8125rem;
+	width: 13rem;
+	height: 11.15rem;
+}
+.accommodations-card:hover {
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+	transition: 0.3s;
+}
+.accommodations-card img {
+	border-radius: 0.75rem 0.75rem 0 0;
+	height: 6.125rem;
+	object-fit: cover;
+	position: relative;
+}
+.accommodations-card-text {
+	border-radius: 0 0 1.25rem 1.25rem;
+	line-height: 0.4rem;
+	padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+	font-size: 0.7em;
+}
+.accommodations-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: space-evenly;
+}
+.accommodations-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.accommodations-header-text {
+	margin-left: rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.accommodations-background {
+	background-color: #f2f2f2;
+	border-radius: 1.5rem;
+	height: 35rem;
+	padding: 1rem;
+	width: 50rem;
+}
+.hotels {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+.showmore,
+.showmore a {
+	margin-left: 2rem;
+	margin-top:3rem;
+	color: black;
+	font-size: 1.0rem;
+	font-weight: 600;
+}
+
+/* Most Popular*/
+
+.chart-icon {
+	align-self: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: 1rem;
+	font-size: 1.50rem;
+}
+
+.most-popular-card {
+	background-color: white;
+	border: solid white 0.3rem;
+	border-radius:0.615rem;
+	height: 7.60rem;
+	width: 22rem;
+}
+.most-popular-card:hover {
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+}
+.most-popular-card img {
+	border-radius:0.625rem 0 0 0.625rem;
+	height: 7.10rem;
+	object-fit: cover;
+	position: relative;
+}
+.most-popular-card-text {
+	float: right;
+	height: 7rem;
+	object-fit: cover;
+	position: relative;
+	width: 10rem;
+	font-size: 0.7em;
+}
+
+.most-popular-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	height: 34rem;
+	justify-items: center;
+}
+.most-popular-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.most-popular-header-text {
+	margin-left: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.most-popular-background {
+	background-color: #f2f2f2;
+	border-radius: 1.5rem;
+	height: 35rem;
+	padding: 2rem;
+	width: 30rem;
+}
+.bluestar {
+	color: #0065fc;
+}
+#bluestar-heigth{
+	margin-top: 10rem;	
+}
+#greystar,.greystar {
+	color: #f2f2f2;
+}
+
+.card-color {
+	color: black;
+}
+/* Activities in Marseille*/
+.column-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	height: 39rem;
+}
+.column-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.activities-container {
+	display: flex;
+	height: auto;
+	gap: 3rem;
+	justify-content: center;
+	border: 0.3rem solid red;
+}
+.activities-container a {
+	color: black;
+}
+.activities-container h3 {
+	line-height: 2rem;
+	margin: 0.5rem 1rem;
+	font-size: 1em;
+	
+}
+.activities-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.activities-header-text {
+	margin-left: 2rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.activities-background {
+	border-radius: 1.5rem;
+	height: auto;
+	width: 100%;
+	border: 0.3rem solid rgb(38, 0, 255);
+}
+
+/* Activities in Marseille Cards*/
+
+.activitycard {
+	background-color: white;
+	border-radius: 1.25rem;
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+	height: 35rem;
+	transition: 0.3s;
+	width: 23rem;
+}
+.activitycard img {
+	border-radius: 1.5rem 1.5rem 0 0;
+	height: 90%;
+	width: 100%;
+}
+.activitycard:hover {
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+	transition: 0.3s;}
+
+.old-port-card img {
+	height: 90%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+.pomegues-card {
+	height: 18rem;
+}
+
+.pomegues-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.frioul-card {
+	height: 14rem;
+}
+
+.frioul-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.calanques-card img {
+	height: 90%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.notre-dame-card {
+	height: 16rem;
+}
+
+.notre-dame-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.longchamp-card {
+	height: 16rem;
+}
+
+.longchamp-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
