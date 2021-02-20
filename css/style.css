@@ -3,8 +3,6 @@
   text-decoration: none;
 	box-sizing: border-box;
   font-family: 'Raleway', sans-serif; 
-	/*outline: dotted 1px red;
-	outline-offset: -1px; */
 }
 body {
 	margin: 0 auto;
@@ -13,13 +11,12 @@ body {
 	border: 5px solid rgb(42, 206, 42);
 }
 .Header-Bar{
-  margin: 0px 15px 0px 15px;
-
+  margin: 0 2rem 0 2rem;
 }
-.middle-of-page-section,
+.accomm-and-popular,
 .activities-background,
 .footer-section {
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 /* Reservia logo and Navigation Bar*/
 
@@ -28,59 +25,58 @@ body {
  align-items: center;
  float: left;
  width: 100%;
- margin-top: 30px;
+ margin-top: 1.875rem;
 }
 .navigation {
  display: flex;
  float: right;
- font-size: 12px;
- gap: 35px;
+ font-size: 0.75em;
+ gap: 2.1875rem;
  justify-content: flex-end;
  width: 100%;
- margin-top: 20px;
+ margin-top: 1.25rem;
 }
 .navigation a{
   color: black;
   font-weight: 800;
-  line-height: 20px;
-  padding: 30px ;
+  line-height:1.25rem;
+  padding:1.875rem ;
 }
 #style{
   color: rgb(0,101,252)
 }
 .navigation a:hover{
-  border-top: 4px solid rgb(0,101,252)
+  border-top: 0.25rem solid rgb(0,101,252)
 }
 .top-Header-Bar{ 
   display: flex;
-  margin: 0px;
-  padding: 15px;
+  padding: 0.9375rem;
   justify-content: space-around;
 }
 
 /*Subtitle*/
 
 h2 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 800;
 }
 p{
-  font-size: 13px;
+  font-size:0.7110rem;
 }
 
 /*search-bar*/
 
 .search-icon {
   background-color: #f2f2f2;
-  padding: 14px;
-  padding-bottom: 13px;
-  border-radius: 13px 0px 0px 13px;
-  font-size: 12px;
+  padding: 0.875rem;
+  padding-bottom: 0.8125rem;
+  border-radius: 0.8125rem 0 0 0.8125rem;
+  font-size: 0.75rem;
 }
 .search-bar {
-  padding: 10px;
-  border: 0.1px solid #f2f2f2;
-  margin-left: -5px;
+  padding: 0.625rem;
+  border:0.00625rem solid #f2f2f2;
+  margin-left: -0.3125rem;
 }
 
 .search-bar::placeholder {
@@ -91,12 +87,12 @@ p{
 .submit-btn {
   background-color: rgb(0,101,252);
   color: white;
-  border-radius: 0 13px 13px 0;
-  padding: 11px;
-  font-size: 13px;
+  border-radius: 0 0.8125rem 0.8125rem 0;
+  padding: 0.6875rem;
+  font-size: 0.8125em;
   font-weight: 600;
   border: unset;
-  margin-left: -5px;
+  margin-left: -0.3125rem;
 }
 
 /*Filter-section*/
@@ -105,27 +101,27 @@ p{
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
-	gap: 24px;
-  margin: 15px 0px 15px 0px;
+	gap: 1.5rem;
+    margin: 0.9375rem 0 0.9375rem 0;
 	height:330%;
 	width: auto;
 }
 .filter-bar h2{
   font-weight:900;
-  font-size:14px;
+  font-size:0.875em;
 }
 .filter-button{
   display: inline-flex;
   align-items: center;
-   border-radius:20px;
-   border: 2px solid black;
+   border-radius:1.25rem;
+   border: 0.125rem solid black;
    border-color:#f2f2f2;
    background-color: white;
 }
 
 .filter-button span:nth-child(2){
-  padding-left:5px ;
-  padding-right:10px ;
+  padding-left:0.3125rem;
+  padding-right:1.25rem ;
 }
 .filter-icon{
    display: flex;
@@ -134,19 +130,19 @@ p{
    float: left;
    background-color:#deebff;
    color:#0065FC ;
-   width: 10px;
-   height: 10px;
-   padding: 20px;
-   border-radius: 20px;
-   margin-left: -5px;
+   width:0.625rem;
+   height: 0.625rem;
+   padding: 1.25rem;
+   border-radius:1.25rem;
+   margin-left: -0.3125rem;
 }
 .filter-text{
   font-weight:600;
-  font-size:13px;
+  font-size:0.8em;
   color: black;
  
 }
-.filter-button:hover,.note:hover {
+.filter-button:hover,.note:hover{
   background-color:#66FF66;
 }
 
@@ -154,14 +150,14 @@ p{
 
 .icon{
   text-align: center;
-  margin-right: 10px;
+  margin-right:0.625em;
   color: rgb(0,101,252);
  }
 .note{ 
   text-align:center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius:3.125rem;
   border: 0.2em solid #f2f2f2;
   background-color: white;
   color: rgb(0,101,252);
@@ -220,7 +216,7 @@ p{
 	padding: 1rem;
 	width: 50rem;
 }
-.hotels {
+.section-wrap{
 	display: flex;
 	gap: 1rem;
 	justify-content: center;
@@ -311,29 +307,34 @@ p{
 .column-1 {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
-	height: 39rem;
+	gap: 2rem;
+	height: 27rem;
+	/*border: 0.3rem solid yellow;*/
 }
 .column-2 {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2rem;
+	height: 27rem;
+	/*border: 0.3rem solid greenyellow;*/
 }
 
 .activities-container {
 	display: flex;
 	height: auto;
+	width: auto;
 	gap: 3rem;
 	justify-content: center;
-	border: 0.3rem solid red;
+	/*border: 0.3rem solid red;*/
 }
 .activities-container a {
 	color: black;
 }
 .activities-container h3 {
-	line-height: 2rem;
+	line-height: 1rem;
 	margin: 0.5rem 1rem;
-	font-size: 1em;
+	font-size: 0.8em;
+	font-weight: 600;
 	
 }
 .activities-header {
@@ -346,28 +347,26 @@ p{
 	font-weight: 600;
 }
 .activities-background {
-	border-radius: 1.5rem;
 	height: auto;
 	width: 100%;
-	border: 0.3rem solid rgb(38, 0, 255);
+	/*border: 0.3rem solid rgb(38, 0, 255);*/
 }
 
 /* Activities in Marseille Cards*/
 
-.activitycard {
+.activitiescard {
 	background-color: white;
 	border-radius: 1.25rem;
 	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 	height: 35rem;
-	transition: 0.3s;
-	width: 23rem;
+	width: 15rem;
 }
-.activitycard img {
-	border-radius: 1.5rem 1.5rem 0 0;
-	height: 90%;
+.activitiescard img {
+	border-radius: 1.1rem 1.1rem 0 0;
+	height: 50%;
 	width: 100%;
 }
-.activitycard:hover {
+.activitiescard:hover {
 	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
 	transition: 0.3s;}
 
@@ -377,8 +376,11 @@ p{
 	position: relative;
 	width: 100%;
 }
+.old-port-card{
+	height: 25rem;
+}
 .pomegues-card {
-	height: 18rem;
+	height: 14rem;
 }
 
 .pomegues-card img {
@@ -389,11 +391,11 @@ p{
 }
 
 .frioul-card {
-	height: 14rem;
+	height: 8em;
 }
 
 .frioul-card img {
-	height: 80%;
+	height: 70%;
 	object-fit: cover;
 	position: relative;
 	width: 100%;
@@ -405,25 +407,62 @@ p{
 	position: relative;
 	width: 100%;
 }
+.calanques-card {
+	height: 25rem;
+}
 
 .notre-dame-card {
-	height: 16rem;
+	height: 11rem;
 }
 
 .notre-dame-card img {
-	height: 80%;
+	height: 78%;
 	object-fit: cover;
 	position: relative;
 	width: 100%;
 }
 
 .longchamp-card {
-	height: 16rem;
+	height: 11rem;
 }
 
 .longchamp-card img {
-	height: 80%;
+	height: 78%;
 	object-fit: cover;
 	position: relative;
 	width: 100%;
 }
+/*Footer-seaction*/
+
+.footer-background{
+	background-color: #f2f2f2;
+	padding-bottom:3.125rem;
+  }
+  .footer-container{
+	font-family: 'Raleway', sans-serif;
+	background-color: #f2f2f2;
+	width: 70%;
+	height:auto;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	
+  }
+  .footer-header{
+	display: flex;
+	flex-direction: column;
+	margin-left:1.25rem;
+	margin-top: 1.25rem;
+  }
+  .footer-header h3{
+	font-size: 1rem;
+	font-weight: 600;
+  }
+  .footer-header a{
+	color: black;
+	font-size: 0.8em;
+	margin-bottom: 0.625rem;
+  }
+  .footer-3{
+	margin-right:3.75rem;
+  }
