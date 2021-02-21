@@ -2,7 +2,7 @@
    text-decoration: none;
 	box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
-	outline: dotted 1px red;
+	/*outline: dotted 1px red;
 	outline-offset: -1px; */
 }
 body {
@@ -438,6 +438,7 @@ p{
 .footer-background{
 	background-color: #f2f2f2;
 	padding-bottom:3.125rem;
+	width: 100%;
   }
   .footer-container{
 	font-family: 'Raleway', sans-serif;
@@ -467,85 +468,11 @@ p{
   .footer-3{
 	margin-right:3.75rem;
   }
-/*small screen laptops*
-
-@media screen and (max-width: 1174px){
-	.accommodations-background {
-		height: auto;
-		margin: 0 auto;
-		padding-bottom: 4em;
-		width: 70%;
+/*small screen laptops*/
+@media only screen and (max-width:1179px) and (min-width:600px)  {
+	body{
+		max-width: 900px;
 	}
-	.accommodations-card {
-		width: 20em;
-	}
-}
-.most-popular-background {
-	height: auto;
-	margin: 0 auto;
-	width: 85%;
-}
-.most-popular-card img{
-	height: 100%;
-}
-.most-popular-card {
-	width: 30em;
-}
-.most-popular-card-text {
-	width: 20em;
-}
-	.activitycard,
-	.old-port-card,
-	.pomegues-card,
-	.frioul-card,
-	.calanques-card,
-	.notre-dame-card,
-	.longchamp-card {
-		height: 20em;
-		width: 30em;
-	}
-	.activitycard img {
-		height: 85%;
-	}
-	.activities-background {
-		height: auto;
-		margin: 0 auto;
-		width: 95%;
-	}
-	.activities-container {
-		align-items: center;
-		flex-direction: column;
-		gap: 2em;
-		height: auto;
-	}
-	.activities-header {
-		height: auto;
-	}
-	.column-1,
-	.column-2 {
-		gap: 2em;
-		margin-bottom: 5em;
-	}
-	.section-wrap{
-		flex-direction: column-reverse;
-	}
-	.navigation {
-		align-items: flex-end;
-		gap: 0.6em;
-	}
-	.top-Header-Bar,
-	.top-title-and-subtitle,
-	.search-section,
-	.filter-row,
-	.info-section {
-		margin: 2em auto;
-		width: 95%;
-	}*/
-
-/*tablets*/
-
-@media only screen and (max-width:1179px) and (min-width:500px)  {
-
 	.subtitle,
 	.filter-row,
 	.info-section{
@@ -562,6 +489,98 @@ p{
 		align-items: flex-end;
 		gap: 0.1em;
 	}
+.accommodations-header-text,
+.activities-header-text {
+	margin-left: 13em;
+}
+.activities-container {
+	flex-direction: column;
+	gap: 1em;
+}
+.activities-background,
+.accommodations-background,
+.most-popular-background {
+	border-radius: 1em;
+	height: auto;
+	margin: 0 auto;
+	width: 90%;
+}
+.activities-container,
+.accommodations-container,
+.most-popular-container {
+	align-items: center;
+	height: auto;
+}
+.activitycard,
+.accommodations-card,
+.most-popular-card {
+	width: 25em;
+}
+
+.activitycard h3 {
+	line-height: 1em;
+}
+.activitycard ,
+.old-port-card,
+.calanques-card{
+	height: 16em;
+	width: 30em;
+}
+	.pomegues-card,
+	.frioul-card,
+	.notre-dame-card,
+	.longchamp-card {
+		height: 14em;
+		width: 30em;
+	}
+	.old-port-card img,
+	.frioul-card img,
+	.calanques-card img
+	 {
+		height: 85%;
+	}
+	.activities-background {
+		height: auto;
+		margin: 0 auto;
+		width: 75%;
+	}
+	.activities-container {
+		align-items: center;
+		flex-direction: column;
+		gap: 1.50em;
+		height: auto;
+	}
+	.activities-header {
+		height: auto;
+	}
+	.column-1 {
+		gap: 1em;
+		margin-bottom: 1em;
+	}
+	.column-2 {
+		gap: 1em;
+		margin-bottom: 3em;
+	}
+	.section-wrap{
+		flex-direction: column-reverse;
+	}
+	.navigation {
+		align-items: flex-end;
+		gap: 0.6em;
+	}
+	.top-Header-Bar,
+	.subtitle,
+	.search-section,
+	.filter-row,
+	.info-section {
+		margin: 2em auto;
+		width: 85%;
+	}
+}
+/*tablets*
+
+@media only screen and (max-width:1179px) and (min-width:500px)  {
+
 
 	.section-wrap {
 		flex-direction: column-reverse;
