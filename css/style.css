@@ -95,9 +95,21 @@ p{
   margin-left: -0.3125rem;
 }
 
+.small{
+	display: none;
+}
 /*Filter-section*/
 
 .filter-row {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1.5rem;
+    margin: 0.9375rem 0 0.9375rem 0;
+	height:330%;
+	width: auto;
+}
+.filter-wrap{
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
@@ -143,7 +155,7 @@ p{
  
 }
 .filter-button:hover,.note:hover{
-  background-color:#66FF66;
+  background-color:#66a3ff;
 }
 
 /*info-section*/
@@ -172,8 +184,10 @@ p{
 
 .accommodations-card {
 	background-color: white;
-	border: solid white 0.3110rem;
-	border-radius: 0.8125rem;
+	border: solid white 0.3rem;
+	border-radius:0.615rem;
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+	transition: 0.3s;
 	width: 13rem;
 	height: 11.15rem;
 }
@@ -245,12 +259,14 @@ p{
 	background-color: white;
 	border: solid white 0.3rem;
 	border-radius:0.615rem;
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+	transition: 0.3s;
 	height: 7.60rem;
 	width: 22rem;
 }
 .most-popular-card:hover {
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .most-popular-card img {
 	border-radius:0.625rem 0 0 0.625rem;
@@ -468,64 +484,51 @@ p{
   .footer-3{
 	margin-right:3.75rem;
   }
-/*small screen laptops*/
-@media only screen and (max-width:1179px) and (min-width:600px)  {
+  .footer-header a:hover{
+  color:#66a3ff;
+  }
+/*tablets*/
+@media only screen and (max-width:1179px) and (min-width:630px)  {
 	body{
 		max-width: 900px;
 	}
-	.subtitle,
-	.filter-row,
-	.info-section{
-		margin: 1em;
-		margin-bottom: 2em;
-	    width: 40%;
+	.accommodations-header-text,
+	.activities-header-text {
+		margin-left: 5em;
 	}
-	.search-section{
-		margin: 1em;
-		margin-bottom: 2em;
-	    width: 49%;
+	.activities-container {
+		flex-direction: column;
+		gap: 1em;
 	}
-	.navigation {
-		align-items: flex-end;
-		gap: 0.1em;
+	.activities-background,
+	.accommodations-background,
+	.most-popular-background {
+		border-radius: 1em;
+		height: auto;
+		margin: 0 auto;
+		width: 90%;
 	}
-.accommodations-header-text,
-.activities-header-text {
-	margin-left: 13em;
-}
-.activities-container {
-	flex-direction: column;
-	gap: 1em;
-}
-.activities-background,
-.accommodations-background,
-.most-popular-background {
-	border-radius: 1em;
-	height: auto;
-	margin: 0 auto;
-	width: 90%;
-}
-.activities-container,
-.accommodations-container,
-.most-popular-container {
-	align-items: center;
-	height: auto;
-}
-.activitycard,
-.accommodations-card,
-.most-popular-card {
-	width: 25em;
-}
+	.activities-container,
+	.accommodations-container,
+	.most-popular-container {
+		align-items: center;
+		height: auto;
+	}
+	.activitycard,
+	.accommodations-card,
+	.most-popular-card {
+		width: 25em;
+	}
 
-.activitycard h3 {
-	line-height: 1em;
-}
-.activitycard ,
-.old-port-card,
-.calanques-card{
-	height: 16em;
-	width: 30em;
-}
+	.activitycard h3 {
+		line-height: 1em;
+	}
+	.activitycard ,
+	.old-port-card,
+	.calanques-card{
+		height: 16em;
+		width: 30em;
+	}
 	.pomegues-card,
 	.frioul-card,
 	.notre-dame-card,
@@ -535,8 +538,7 @@ p{
 	}
 	.old-port-card img,
 	.frioul-card img,
-	.calanques-card img
-	 {
+	.calanques-card img{
 		height: 85%;
 	}
 	.activities-background {
@@ -568,6 +570,22 @@ p{
 		align-items: flex-end;
 		gap: 0.6em;
 	}
+	.sign-up{
+		inline-size:7em ;
+		height:6.60em;
+	}
+	.search-section{
+		margin: 1em;
+		margin-bottom: 2em;
+	    width: 49%;
+	}
+	.footer-container{
+		display: flex;
+		flex-direction: row;
+		gap: 0.1em;
+		width:95%;
+	}
+
 	.top-Header-Bar,
 	.subtitle,
 	.search-section,
@@ -577,73 +595,131 @@ p{
 		width: 85%;
 	}
 }
-/*tablets*
+/*cell phones*/
 
-@media only screen and (max-width:1179px) and (min-width:500px)  {
-
-
-	.section-wrap {
-		flex-direction: column-reverse;
-	}
-	.accommodations-header-text {
-		margin-left: 6em;
+@media only screen and (max-device-width: 629px) {
+	body{
+		max-width:433px ;
 	}
 	.activities-container {
 		flex-direction: column;
-		gap: 2em;
+		gap: 1em;
 	}
-	
-	.accommodations-background,
-	.most-popular-background,
-	 .activities-background {
+	.most-popular-background {
 		border-radius: 1em;
 		height: auto;
 		margin: 0 auto;
-		width: 90%;
+		width: 100%;
+	}
+	.activities-background,
+	.accommodations-background{
+		border-radius: 1em;
+		height: auto;
+		margin: 0 auto;
+		width: 80%;
 	}
 	.activities-container,
 	.accommodations-container,
 	.most-popular-container {
 		align-items: center;
-		
-	}
-	
-	.accommodations-card,
-	.most-popular-card,.activitycard{
-		width: 29em;
+		height: auto;
 	}
 	.activitycard,
+	.accommodations-card,
+	.most-popular-card {
+		width: 18em;
+	}
+	.section-wrap{
+		flex-direction: column-reverse;
+	}
+	.accommodations-background{
+		background-color: white;
+	}
+	.activities-header-text {
+		margin-left: 2em;
+	}
+	.activitycard h3 {
+		line-height: 1em;
+	}
+	.activitycard ,
 	.old-port-card,
+	.calanques-card{
+		height: 13em;
+		width: 19em;
+	}
 	.pomegues-card,
 	.frioul-card,
-	.calanques-card,
 	.notre-dame-card,
 	.longchamp-card {
-		height: 15em;
+		height: 13em;
+		width: 19em;
+	}
+	.old-port-card img,
+	.frioul-card img,
+	.calanques-card img{
+		height: 75%;
+	}
+	.activities-background {
+		height: auto;
+		margin: 0 auto;
+		width: 75%;
+	}
+	.activities-container {
+		align-items: center;
+		flex-direction: column;
+		gap: 1.50em;
+		height: auto;
+	}
+	.activities-header {
+		height: auto;
+	}
+	.column-1 {
+		gap: 1em;
+		margin-bottom: 1em;
+	}
+	.column-2 {
+		gap: 1em;
+		margin-bottom: 3em;
+	}
+	.showmore,
+    .showmore a {
+	margin-left: 1rem;
+	margin-top:2rem;
+	}
+	footer-container{
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		gap: 1em;
+		width: 20%;
+	}
+
+	.top-Header-Bar,
+	.subtitle,
+	.search-section,
+	.filter-row,
+	.info-section {
+		width: 95%;
+	}
+	.filter-wrap a:nth-child(1){
+		order:1 ;
+	}
+	.filter-wrap a:nth-child(2){
+		order: 3;
+	}.filter-wrap a:nth-child(3){
+		order: 2;
+	}.filter-wrap a:nth-child(4){
+		order: 4;
+	}
+	.navigation{
+		gap:1em;
+	}
+	.large{
+display: none;
+	}
+	.small{
+		display: inline-block;
 	}
 }
-.activitycard img {
-	height: 50%;
-}
-.activities-background {
-	height: auto;
-	margin: 0 auto;
-	width: 90%;
-}
-.activities-container {
-	align-items: center;
-	flex-direction: column;
-	gap: 1em;
-	
-}
-.activities-header {
-	height: auto;
-}
-.column-1,
-.column-2 {
-	gap: 2em;
-	margin-bottom: 3em;
-	}
-	.most-popular-card-text {
-		width: 17em;
-	}
+
