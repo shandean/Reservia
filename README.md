@@ -1,6 +1,7 @@
-![reservia Logo](images\logo\Reservia.svg)
+![reservia Logo](/images/logo/Reservia.svg)
 
 <<<<<<< HEAD
+
 *Transform mockup into responsive one-page HTML/CSS static template*
 
 [My web page hosted online on GitHub Pages](shandean.github.io/reservia/)
@@ -16,12 +17,8 @@ Accommodations can also be filtered by theme, for example, their budget or their
 - The site font is [Raleway](https://fonts.google.com/specimen/Raleway?preview.text_type=custom).
 
 ## This mock-up for desktop
-![desktop](images\logo\Desktop.png)
+![desktop](/images/logo/Desktop.png)
 
 ## This Mock-Up for Phone
 ![phone](images\logo\iPhone.png)
-=======
-Reservia, a small company offering a vacation planning tool. Their site allows users to find accommodations and activities in the city of their choice.
-Accommodations can also be filtered by theme, for example, their budget or their atmosphere.
- 
->>>>>>> 7332f12b43832fcef0e7432abb0388a92afe05fe
+
