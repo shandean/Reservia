@@ -4,7 +4,7 @@
 
 [My web page hosted online on GitHub Pages](shandean.github.io/reservia/)
 
-## Details Mock ups
+## Details of the Mockup
 
 Reservia, a small company offering a vacation planning tool. 
 Their site allows users to find accommodations and activities in the city of their choice. 
