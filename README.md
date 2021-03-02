@@ -19,5 +19,5 @@ Accommodations can also be filtered by theme, for example, their budget or their
 ![desktop](/images/logo/Desktop.png)
 
 ## This Mock-Up for Phone
-![phone](images\logo\iPhone.png)
+![phone](images/logo/iPhone.png)
 
