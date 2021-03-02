@@ -1,6 +1,5 @@
 ![reservia Logo](/images/logo/Reservia.svg)
 
-<<<<<<< HEAD
 
 *Transform mockup into responsive one-page HTML/CSS static template*
 
