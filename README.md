@@ -3,7 +3,7 @@
 
 *Transform mockup into responsive one-page HTML/CSS static template*
 
-[My web page hosted online on GitHub Pages](shandean.github.io/reservia/)
+[My web page hosted online on GitHub Pages](https://shandean.github.io/Reservia/)
 
 ## Details of the Mockup
 
