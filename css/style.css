@@ -1,5 +1,5 @@
 * { 
-   text-decoration: none;
+    text-decoration: none;
 	box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
 	/*outline: dotted 1px red;
@@ -20,12 +20,12 @@ body {
 }
 /* Reservia logo and Navigation Bar*/
 
-#logo-link{
- display: flex;
- align-items: center;
- float: left;
- width: 100%;
- margin-top: 1.875rem;
+	#logo-link{
+	display: flex;
+	align-items: center;
+	float: left;
+	width: 100%;
+	margin-top: 1.875rem;
 }
 .top-Header-Bar{ 
 	display: flex;
@@ -33,67 +33,68 @@ body {
 	justify-content: space-around;
   }
 .navigation {
- display: flex;
- float: right;
- font-size: 0.75em;
- gap: 2.1875rem;
- justify-content: flex-end;
- width: 100%;
- margin-top: 1.25rem;
+	display: flex;
+	float: right;
+	font-size: 0.75em;
+	gap: 2.1875rem;
+	justify-content: flex-end;
+	width: 100%;
+	margin-top: 1.25rem;
 }
 .navigation a{
-  color: black;
-  font-weight: 800;
-  line-height:1.25rem;
-  padding:1.875rem ;
+	color: black;
+	font-weight: 800;
+	line-height:1.25rem;
+	padding:1.875rem ;
 }
-#style{
-  color: #0065FC
+.navigation a:nth-child(1),
+.navigation a:nth-child(3){
+	color: #0065FC
 }
 .navigation a:hover{
-  border-top: 0.25rem solid #0065FC;
+	border-top: 0.25rem solid #0065FC;
 }
 
 
 /*Subtitle*/
 
 h2 {
-  font-size: 0.9375rem;
-  font-weight: 800;
+	font-size: 0.9375rem;
+	font-weight: 800;
 }
 p{
-  font-size:0.8em;
+	font-size:0.8em;
 }
 
 /*search-bar*/
 
 .search-icon {
-  background-color: #f2f2f2;
-  padding: 0.875rem;
-  padding-bottom: 0.8125rem;
-  border-radius: 0.8125rem 0 0 0.8125rem;
-  font-size: 0.75rem;
+	background-color: #f2f2f2;
+	padding: 0.875rem;
+	padding-bottom: 0.8125rem;
+	border-radius: 0.8125rem 0 0 0.8125rem;
+	font-size: 0.75rem;
 }
 .search-bar {
-  padding: 0.625rem;
-  border:0.00625rem solid #f2f2f2;
-  margin-left: -0.3125rem;
+	padding: 0.625rem;
+	border:0.00625rem solid #f2f2f2;
+	margin-left: -0.3125rem;
 }
 
-.search-bar::placeholder {
-  color: black;
-  font-weight:603;
+input::placeholder {
+	font-weight: 600;
+	color: black;
 }
 
 .submit-btn {
-  background-color: #0065FC;
-  color: white;
-  border-radius: 0 0.8125rem 0.8125rem 0;
-  padding: 0.6875rem;
-  font-size: 0.8125em;
-  font-weight: 600;
-  border: unset;
-  margin-left: -0.3125rem;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 0 0.8125rem 0.8125rem 0;
+	padding: 0.6875rem;
+	font-size: 0.8125em;
+	font-weight: 600;
+	border: unset;
+	margin-left: -0.3125rem;
 }
 
 .small{
@@ -120,22 +121,22 @@ p{
 	width: auto;
 }
 .filter-bar{
-  font-weight:600;
-  font-size:0.875em;
+	font-weight:600;
+	font-size:0.875em;
 }
 .filter-button{
-  display: inline-flex;
-  align-items: center;
-   border-radius:1.25rem;
-   border: 0.125rem solid black;
-   border-color:#f2f2f2;
-   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-   transform: 2s;
+	display: inline-flex;
+	align-items: center;
+	border-radius:1.25rem;
+	border: 0.125rem solid black;
+	border-color:#f2f2f2;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+	transition: 2s;
 }
 
 .filter-button span:nth-child(2){
-  padding-left:0.3125rem;
-  padding-right:1.50rem ;
+	padding-left:0.3125rem;
+	padding-right:1.50rem ;
 }
 .filter-icon{
    display: flex;
@@ -151,42 +152,42 @@ p{
    margin-left: -0.3125rem;
 }
 .filter-text{
-  font-weight:600;
-  font-size:0.8em;
-  color: black;
- width: 100%;
+	font-weight:600;
+	font-size:0.8em;
+	color: black;
+	width: 100%;
 }
 .filter-button:hover,.note:hover{
-  background-color:#66a3ff;
-  transition: 2s;
+	background-color:#66a3ff;
+	transition: 2s;
 }
 
 /*info-section*/
 
 .icon{
-  text-align: center;
-  margin-right:0.625em;
-  color: #0065FC;
+	text-align: center;
+	margin-right:0.625em;
+	color: #0065FC;
  }
 .note{ 
-  text-align:center;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-radius:3.125rem;
-  border: 0.2em solid #f2f2f2;
-  background-color: white;
-  color: #0065FC;
-  font-size: 0.6em;
+	text-align:center;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius:3.125rem;
+	border: 0.2em solid #f2f2f2;
+	background-color: white;
+	color: #0065FC;
+	font-size: 0.6em;
 }
 .inform{
-  display: inline-flex;
+	display: inline-flex;
   }
   
 /* Accommodations in Marseille */
 
 .accommodations-card {
 	background-color: white;
-	border: solid white 0.2rem;
+	border: solid #fff 0.2rem;
 	border-radius:0.715rem;
 	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
@@ -201,8 +202,7 @@ p{
 	border-radius: 0.75rem 0.75rem 0 0;
 	height: 6.125rem;
 	object-fit: cover;
-	position: relative;
-	
+	position: relative;	
 }
 .accommodations-card-text {
 	border-radius: 0 0 1.25rem 1.25rem;
@@ -247,6 +247,7 @@ p{
 }
 
 /* Most Popular*/
+
 .chart-icon {
 	align-self: center;
 	display: flex;
@@ -257,7 +258,7 @@ p{
 
 .most-popular-card {
 	background-color: white;
-	border: solid white 0.2rem;
+	border: solid #fff 0.2rem;
 	border-radius:0.615rem;
 	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
@@ -265,8 +266,8 @@ p{
 	width: 22rem;
 }
 .most-popular-card:hover {
-		box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
-		transition: 0.3s;
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.22);
+	transition: 0.3s;
 }
 .most-popular-card img {
 	border-radius:0.625rem 0 0 0.625rem;
@@ -479,10 +480,10 @@ p{
 	margin-right:3.75rem;
   }
   .footer-header a:hover,.inform:hover{
-  color:#66a3ff;
+	color:#66a3ff;
   }
 /*tablets*/
-@media only screen and (max-width:1178px) and (min-width:630px)  {
+@media only screen and (max-width:1178px) and (min-width:630px){
 	body{
 		max-width: 800px;
 	}
@@ -535,7 +536,7 @@ p{
 	}
 	.top-Header-Bar,
 	.subtitle,
-	.search-section,
+	.search-container,
 	.info-section {
 		margin: 1em auto;
 		width: 85%;
@@ -543,8 +544,6 @@ p{
 	.section-container{
 		flex-direction: column-reverse;
 	}
-
-
 	.accommodations-header-text,
 	.activities-header-text {
 		margin-left: 7em;
@@ -625,13 +624,12 @@ p{
 }
 
 /*cell phones*/
-@media only screen and (max-device-width: 629px) {
+@media screen and (max-width: 629px) {
 	body{
 		max-width:480px;
 	}
 	
 	#logo-link{
-		box-sizing: 20px 30px ;
 		position: relative;
 		left: 1em;
 		top: -2em;
@@ -680,7 +678,7 @@ p{
 		padding: 1em;
 		width: 13%;
 	}
-	.search-section{
+	.search-container{
 		margin-top: 1.20em;
 	}
 
@@ -710,15 +708,15 @@ p{
 		margin-bottom: 1em;
 	}
 	.large{
-	display: none;
+		display: none;
 	}
 	.small{
-	display: inline-block;
+		display: inline-block;
 	}
 	.showmore,
 	.showmore a {
-	margin-left: 1rem;
-	margin-top:2rem;
+		margin-left: 1rem;
+		margin-top:2rem;
 	}
 	.subtitle h2{
 		width: 70%;
